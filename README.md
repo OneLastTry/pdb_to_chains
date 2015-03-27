@@ -12,7 +12,7 @@ Usage is extremely simple. The following command will process the files
     pdb_to_chains.pl $PDBDIR 1abc.ent 4xyz.ent
 
 It is assumed that `$PDBDIR` is a directory containing a copy of the RCSB's
-[FTP archive][1]. That is, under `$PDBDIR` is the following hierarchy:
+FTP archive (ftp://ftp.wwpdb.org/pub/pdb/data/structures/divided/). That is, under `$PDBDIR` is the following hierarchy:
 
     $PDBDIR
     └── pdb
@@ -56,6 +56,3 @@ allows rsync logs to be piped directly into `pdb_to_chains.pl`.
 For example:
 
     zcat rsyncLog.gz | pdb_to_chains.pl -l - -m
-
-
-[1]: ftp://ftp.wwpdb.org/pub/pdb/data/structures/divided/
