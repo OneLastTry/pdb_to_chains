@@ -89,6 +89,7 @@ for my $pdb(@PDBS){
     #Write out the file for each chain
     for my $chain(keys %chains){
         my $out_file = file_name($source_file, $chain);
+        next if (-e $out_file);
 
         #Create output directory if it doesn't exist
         my ($name, $dirname) = fileparse($out_file);
