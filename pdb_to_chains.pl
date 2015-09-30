@@ -107,7 +107,7 @@ for my $pdb(@PDBS){
     }
 
     #Update progress bar
-    if($has_progressbar){
+    if($progressbar){
         $progressbar->update($num_processed);
     }
 }
